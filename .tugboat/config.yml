@@ -59,10 +59,12 @@ services:
       # from the base preview.
       build:
         - composer install --optimize-autoloader -d "${TUGBOAT_ROOT}"
-        - drush site:install --account-pass="admin" -y
-        - drush config:export -y
-        - drush updatedb -y
-        - drush cache:rebuild
+        # - drush site:install --account-pass="admin" -y
+        - drush -r "${DOCROOT}" sql-drop
+        - zcat "${TUGBOAT_ROOT}/db-dumps/START-d8-views.sql.gz" | drush -r "${DOCROOT}" sql-cli
+        #- drush config:export -y
+        #- drush updatedb -y
+        #- drush cache:rebuild
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
@@ -78,4 +80,4 @@ services:
       # already be present.
       update:
         # Import a database dump from the db-dumps directory.
-        - zcat "${TUGBOAT_ROOT}/db-dumps/START-d8-views.sql.gz" | mysql tugboat
+        #- zcat "${TUGBOAT_ROOT}/db-dumps/START-d8-views.sql.gz" | mysql tugboat
