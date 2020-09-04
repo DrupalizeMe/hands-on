@@ -7864,7 +7864,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.0.4",
+            "version": "9.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
