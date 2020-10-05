@@ -61,7 +61,7 @@ services:
         - composer install --optimize-autoloader -d "${TUGBOAT_ROOT}"
         # - drush site:install --account-pass="admin" -y
         - drush -r "${DOCROOT}" sql-drop
-        - zcat "${TUGBOAT_ROOT}/db-dumps/START-d8-views.sql.gz" | drush -r "${DOCROOT}" sql-cli
+        - zcat "${TUGBOAT_ROOT}/db-dumps/START-d9-views.sql.gz" | drush -r "${DOCROOT}" sql-cli
         #- drush config:export -y
         #- drush updatedb -y
         #- drush cache:rebuild
@@ -80,4 +80,4 @@ services:
       # already be present.
       update:
         # Import a database dump from the db-dumps directory.
-        #- zcat "${TUGBOAT_ROOT}/db-dumps/START-d8-views.sql.gz" | mysql tugboat
+        #- zcat "${TUGBOAT_ROOT}/db-dumps/START-d9-views.sql.gz" | mysql tugboat
