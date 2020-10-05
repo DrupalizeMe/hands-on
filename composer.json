@@ -1,6 +1,6 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "drupalizeme/hands-on",
+    "description": "Drupalize.Me Hands-On Views tutorial companion repo",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -17,18 +17,19 @@
     ],
     "require": {
         "php": ">=7.0.8",
-        "composer/installers": "^1.2",
+        "composer/installers": "^1.7",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8.0",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core-composer-scaffold": "~9.0.0@dev",
+        "drupal/core-recommended": "~9.0.0@dev",
+        "drupal/upgrade_status": "^2.0",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "vlucas/phpdotenv": "^5.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.0.3"
+        "drupal/core-dev": "~9.0.0@dev"
     },
     "conflict": {
         "drupal/drupal": "*"
