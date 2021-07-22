@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a0afc2f99dedebe40e513aa68f2446d",
+    "content-hash": "abbc190caf7d80829ed5b6175a934981",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1978,16 +1978,16 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.1.8",
+            "version": "9.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d"
+                "reference": "e146f2d0bab60c798c7cc91eae79f25c43a96899"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/7b125516d6568b888945ee03ac2636dcced76e8d",
-                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/e146f2d0bab60c798c7cc91eae79f25c43a96899",
+                "reference": "e146f2d0bab60c798c7cc91eae79f25c43a96899",
                 "shasum": ""
             },
             "require": {
@@ -2021,7 +2021,7 @@
             "keywords": [
                 "drupal"
             ],
-            "time": "2020-08-07T22:30:13+00:00"
+            "time": "2021-07-10T22:39:33+00:00"
         },
         {
             "name": "drupal/core-recommended",
@@ -9593,6 +9593,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-11-30T07:30:19+00:00"
         },
         {
@@ -10163,7 +10164,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/core-composer-scaffold": 20,
+        "drupal/core-recommended": 20,
         "drupal/core-dev": 20
     },
     "prefer-stable": true,
