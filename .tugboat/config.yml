@@ -64,7 +64,7 @@ services:
         - zcat "${TUGBOAT_ROOT}/db-dumps/START-d9-views.sql.gz" | drush -r "${DOCROOT}" sql-cli
         #- drush config:export -y
         #- drush updatedb -y
-        #- drush cache:rebuild
+        - drush cache:rebuild
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
