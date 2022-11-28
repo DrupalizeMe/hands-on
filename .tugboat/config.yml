@@ -65,6 +65,8 @@ services:
         #- drush config:export -y
         #- drush updatedb -y
         - drush cache:rebuild
+        # Make sure bartik is enabled and the default theme.
+        - drush config:set -y system.theme default bartik 
 
   # What to call the service hosting MySQL. This name also acts as the
   # hostname to access the service by from the php service.
